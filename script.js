@@ -1,15 +1,16 @@
 // create questions
 // array of ojects
 // var contentEl = document.getElementById('content');
-var startBtn = document.querySelector('#start');
-var timerEl = document.querySelector('#timer');
-var containerEl = document.querySelector('#container');
+let startBtn = document.querySelector('#start');
+let timerEl = document.querySelector('#timer');
+let containerEl = document.querySelector('#container');
 
-var timer = 75
-var currentQuestionIndex = 0;
+let score = 0
+let timer = 75
+let currentQuestionIndex = 0;
 
 
-var questions = [
+let questions = [
     {
         question: "What is the color of the sky",
         options: ["blue", "orange", "red", "green"],
@@ -30,31 +31,28 @@ var questions = [
 function renderCurrentQuestion() {
     containerEl.innerHTML = '';
 
-    var currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
 
-    var header = document.createElement('h2');
+    let header = document.createElement('h2');
     header.textContent = questions[currentQuestionIndex].question;
     containerEl.appendChild(header);
 
-    var ulEl = document.createElement('ul');
+    let ulEl = document.createElement('ul');
 
-    for (var i = 0; i < currentQuestion.options.length; i++) {
-        varliEl = document.createElement('li');
+    for (let i = 0; i < currentQuestion.options.length; i++) {
+        let liEl = document.createElement('li');
         liEl.textContent = currentQuestion.options[i];
         ulEl.appendChild(liEl);
     }
     containerEl.appendChild(ulEl);
 }
-
-startBtn.addEventListener('click', function() {
-
+//Start Button
+startBtn.addEventListener('click',function(){
     renderCurrentQuestion();
 
-    var timerInterval = setInterval(function() {
+    let timerInterval = setInterval(function() {
         timerEl.textContent = timer;
         timer--;
-
-
 
         if (timer === 0) {
             clearInterval(timerInterval);
@@ -62,14 +60,14 @@ startBtn.addEventListener('click', function() {
             // CHange DOM to say game over
         }
     }, 1000);
-};
+});
 
 containerEl.addEventListener('click', function (event) {
 
     if (event.target.matches('li')) {
-        var currentQuestion = questions[currentQuestionIndex];
+        let currentQuestion = questions[currentQuestionIndex];
 
-        var userGuess = event.target.textContent;
+        let userGuess = event.target.textContent;
 
         if (userGuess === currentQuestion.answer) {
    // keep score here
