@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz</title>
 </head>
+
 <body>
-    <main>
-        <h1>
-            Welcome to my quiz
-        </h1>
 
-        <section id="container">
+    <div class="outer-container">
+        <div class="top-bar">
+            <button> View Highscores</button>
+            <p>
+                Timer:
+                <span id="timer">0</span>
+            </p>
+        </div>
 
-        </section>
-        
-        <p>
-            Timer: 
-        <span id="timer">0</span>
-    </p>
-        <button id="start">Start Quiz</button>
 
-    </main>
+        <div class="inner-container">
+            <header class="start">
+                <h1>
+                    Shall we play a game?
+                </h1>
+                <button id="start">Start Quiz</button>
+            </header>
+
+
+            <main>
+
+                <section id="container">
+
+                </section>
+                <p>
+                    Score:
+                    <span id="Score">0</span>
+                </p>
+
+            </main>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>

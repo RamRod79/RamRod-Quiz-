@@ -1,0 +1,48 @@
+/* Gloabal design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid navy; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(143, 195, 195);
+
+}
+
+p {
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+button {
+    outline: none;
+    background-color: grey;
+}
+
+/* Outer Container design */
+.outer-container {
+    padding: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+/* Top bar design */
+.top-bar p {
+float: right;
+}
+/* Inner design */
+
+.inner-container {
+    background-color: rgb(103, 103, 112);
+    height: 100%
+} 
+
+/* Header design */
+
+/* Main content design */
+

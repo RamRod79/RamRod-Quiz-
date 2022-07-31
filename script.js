@@ -4,6 +4,7 @@
 let startBtn = document.querySelector('#start');
 let timerEl = document.querySelector('#timer');
 let containerEl = document.querySelector('#container');
+let scoreEl = document.querySelector('#score');
 
 let score = 0
 let timer = 75
