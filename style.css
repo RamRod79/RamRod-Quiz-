@@ -4,8 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid navy; 
+    /* border: 1px solid navy;  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 body {
@@ -21,6 +22,10 @@ p {
 button {
     outline: none;
     background-color: grey;
+}
+
+h1, h2 {
+   color: blanchedalmond; 
 }
 
 /* Outer Container design */
@@ -39,10 +44,19 @@ float: right;
 
 .inner-container {
     background-color: rgb(103, 103, 112);
-    height: 100%
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 } 
 
 /* Header design */
+.start {
+    margin-bottom: 10vh;
+}
 
 /* Main content design */
 
