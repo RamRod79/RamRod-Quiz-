@@ -20,7 +20,7 @@
             </p>
         </div>
 
-
+        <!-- Initial Start screen before quiz begins -->
         <div class="inner-container">
             <header class="start">
                 <h1>
@@ -32,15 +32,33 @@
 
 
             <main>
+                <!-- After quiz has initiated, screen showing quesitons -->
+                <section id="container"></section>
 
-                <section id="container">
-
+                <!-- Display screen at end of quiz -->
+                <section class="end-screen">
+                    <h2>Quiz Complete!</h2>
+                    <p>
+                        Score:
+                        <span id="Score">0</span>
+                    </p>
+                    <div>
+                        <label for="Enter Initials"></label>
+                        <input type="text">
+                        <button>Submit</button>
+                    </div>
                 </section>
-                <p>
-                    Score:
-                    <span id="Score">0</span>
-                </p>
-
+                <section class="highscore-display">
+                    <h2>Highscores</h2>
+                    <ol>
+                        <li>Initials - Score</li>
+                        <li>Initials - Score</li>
+                        <li>Initials - Score</li>
+                                              
+                    </ol>
+                    <button>Go Back</button>
+                    <Button>Clear Highscores</Button>
+                </section>
             </main>
         </div>
     </div>

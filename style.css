@@ -26,6 +26,10 @@ button {
 
 h1, h2 {
    color: blanchedalmond; 
+   text-align: center;
+}
+li {
+    list-style: none;
 }
 
 /* Outer Container design */
@@ -54,9 +58,54 @@ float: right;
 } 
 
 /* Header design */
-.start {
+.start, main {
+    display: block;
     margin-bottom: 10vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(130, 127, 127);
 }
 
-/* Main content design */
+.start p {
+    text-align: center;
+}
 
+.start button {
+    display: block;
+    margin: 0 auto;
+}
+/* Main content design */
+main {
+    display: block;
+}
+
+/* end screen display */
+.end-screen {
+    display: none;
+}
+
+/* Highscore display screen */
+.highscore-display {
+    display: none;
+}
+
+.highscore-display ol {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+ul li {
+    background-color: blue;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+ul li:hoover{
+    background-color: lightblue;
+    color: navy;
+    cursor: pointer;
+
+}
