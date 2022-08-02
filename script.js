@@ -1,6 +1,6 @@
 // create questions
 // array of ojects
-// var contentEl = document.getElementById('content');
+
 let startBtn = document.querySelector('#start');
 let timerEl = document.querySelector('#timer');
 let containerEl = document.querySelector('#container');
@@ -96,7 +96,7 @@ startBtn.addEventListener('click', function() {
         if (timer === 0) {
             clearInterval(timerInterval);
             containerEl.innerHTML = "";
-            // CHange DOM to say game over
+            // Change DOM to say game over
         }
     }, 1000);
 });

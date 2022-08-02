@@ -27,20 +27,10 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-## Badges
+## Snapshot
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+![The password webpage includes a display for the password, a button to click to initiate the generation of a password and prompts while choosing a password.](./assets/images/quiz.jpg).
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+## Link
 
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+The link of the webpage is: https://ramrod79.github.io/RamRod-Quiz-/
